@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { FaRegBookmark, FaRegEye, FaShareAlt } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   return (
@@ -43,9 +44,12 @@ const NewsCard = ({ news }) => {
       </p>
 
       {/* Read More */}
-      <p className="text-orange-500 font-semibold mt-2 cursor-pointer">
+      <Link
+        to={`/news/${news._id}`}
+        className="text-orange-500 font-semibold mt-2 cursor-pointer"
+      >
         Read More
-      </p>
+      </Link>
 
       {/* Footer: Rating & Views */}
       <div className="flex justify-between items-center mt-4 border-t pt-3">
