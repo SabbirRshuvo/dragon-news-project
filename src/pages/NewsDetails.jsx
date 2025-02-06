@@ -5,7 +5,7 @@ import RightNavbar from "../components/AsideLayout/RightNavbar";
 const NewsDetails = () => {
   const { data } = useLoaderData();
   const news = data[0];
-  console.log(news);
+
   return (
     <div className="w-10/12 mx-auto">
       <header>

@@ -15,6 +15,7 @@ const Navbar = () => {
       </div>
       <div className="flex gap-2 login items-center">
         <img src={userIcon} alt="userIcon" />
+
         {user ? (
           <Link
             onClick={handleSignOut}
